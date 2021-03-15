@@ -9,9 +9,9 @@ package pkg25bai;
  *
  * @author thien
  */
-public class Bai4Main {
+public class Bai04Main {
     public static void main(String[] args) {
-        Bai4TamGiac obj = new Bai4TamGiac();
+        Bai04TamGiac obj = new Bai04TamGiac();
         obj.DauVao();
         obj.KetQua();
     }

@@ -11,14 +11,14 @@ import java.util.Scanner;
  *
  * @author thien
  */
-public class Bai4TamGiac {
+public class Bai04TamGiac {
     
     private double aCanh, bCanh, cCanh;
 
-    public Bai4TamGiac() {
+    public Bai04TamGiac() {
     }
     
-    public Bai4TamGiac(double aCanh, double bCanh, double cCanh) {
+    public Bai04TamGiac(double aCanh, double bCanh, double cCanh) {
         this.aCanh = aCanh;
         this.bCanh = bCanh;
         this.cCanh = cCanh;
