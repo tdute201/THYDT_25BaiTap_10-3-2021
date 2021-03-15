@@ -69,17 +69,19 @@ public class Bai04TamGiac {
     }
     
     public String PhanLoaiTamGiac() {
-        String loaiTG = "Tam giac ";
-        
         if(aCanh >= bCanh + cCanh || bCanh >= aCanh + cCanh || cCanh >= bCanh + aCanh)
             return "3 canh khong tao thanh tam giac";
         if(aCanh == bCanh || aCanh == cCanh || bCanh == cCanh) {
-            if(aCanh*aCanh == bCanh*bCanh + cCanh*cCanh || bCanh*bCanh == aCanh*aCanh + cCanh*cCanh || cCanh*cCanh == bCanh*bCanh + aCanh*aCanh)
+            if(aCanh*aCanh == bCanh*bCanh + cCanh*cCanh
+            || bCanh*bCanh == aCanh*aCanh + cCanh*cCanh 
+            || cCanh*cCanh == bCanh*bCanh + aCanh*aCanh)
                 return "Tam giac vuong can";
             return "Tam giac can";
         }
-        if(aCanh*aCanh == bCanh*bCanh + cCanh*cCanh || bCanh*bCanh == aCanh*aCanh + cCanh*cCanh || cCanh*cCanh == bCanh*bCanh + aCanh*aCanh)
-            loaiTG += "Tam giac vuong";
+        if(aCanh*aCanh == bCanh*bCanh + cCanh*cCanh
+        || bCanh*bCanh == aCanh*aCanh + cCanh*cCanh 
+        || cCanh*cCanh == bCanh*bCanh + aCanh*aCanh)
+            return "Tam giac vuong";
         if(aCanh == bCanh && aCanh == cCanh)
             return "Tam giac deu";
         return "Tam giac thuong";
@@ -87,7 +89,6 @@ public class Bai04TamGiac {
     
     public double DienTich() {
         double p = (aCanh + bCanh + cCanh)/2;
-        System.out.println(Math.sqrt(5));
         return Math.sqrt(p*(p - aCanh)*(p - bCanh)*(p - cCanh));
     }
     
